@@ -1,0 +1,20 @@
+html
+  head
+    script src='http://code.jquery.com/jquery-1.8.3.min.js'
+    coffee:
+      $ ->
+        verify_week_end= ()->
+          $('#time').val(new Date())
+          $('#form').submit()
+        setTimeout(verify_week_end, 60000)
+    sass:
+      h1
+        font-family: 'Helvetica'
+        font-size: 5em
+        width: 390px
+        margin: 0 auto
+
+  body
+    h1 NOT NOW
+    form#form action='/weekend' method='POST'
+      input#time type='hidden' name='time'
