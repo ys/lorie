@@ -5,4 +5,5 @@ gem 'sinatra'
 gem 'slim'
 gem 'coffee-script'
 gem 'sass'
+gem 'heroku'
 
